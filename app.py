@@ -20,7 +20,7 @@ st.set_page_config(
 ct1 = st.container()
 with ct1:
     st.header('**5 Juta Bayi Meninggal Setiap Tahun** : Apa Penyebabnya?')
-    st.markdown('[Muhamad Faridi Dahlan] --- [TETRIS Program Batch IV]')
+    st.markdown('[[**Muhamad Faridi Dahlan**]](https://www.linkedin.com/in/muhamadfarididahlan/) --- [TETRIS Program Batch IV]')
 st.markdown('\n')
 
 # Page of my web
