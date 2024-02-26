@@ -38,7 +38,7 @@ if selected5 == 'Pendahuluan':
     col1, col2, col3 = st.columns(3)
     # Tampilkan gambar di kolom tengah
     with col1:
-        image = r'image/anak percaya diri.jpg'
+        image = r'image/anak percaya diri.JPG'
         st.image(image,caption='Gambar 1. Anak Indonesia',width=500)
     st.write("""**Kematian  atau  mortalitas**  adalah  salah  satu  dari  tiga komponen proses demografi yang berpengaruh terhadap struktur penduduk. Tinggi rendahnya tingkat mortalitas pendudukan di suatu daerah tidak hanya mempengaruhi pertumbuhan penduduk, tetapi juga merupakan barometer dari tinggi rendahnya tingkat kesehatan masyarakat di daerah tersebut ([**Ibrahim,2023**](https://www.researchgate.net/publication/368642648_MORTALITAS))""")
     st.write("""Angka kematian anak menggambarkan kualitas pelayanan kesehatan sebagai indikator kesejahteraan negara 
