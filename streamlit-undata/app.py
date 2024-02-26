@@ -58,7 +58,7 @@ tidak mendapatkan pendidikan dasar ([**WHO Journal,2014**](https://apps.who.int/
     #inputting grafik
     st.write("""Grafik di bawah ini menunjukkan mortalitas balita (dibawah 5 tahun) per 1000 kelahiran dari tahun ke tahun diseluruh dunia""")
     #olah data csv
-    df_year = pd.read_csv(r'dataset untuk streamlit/yoy_mortality.csv')
+    df_year = pd.read_csv(r'dataset-streamlit/yoy_mortality.csv')
     fig = px.line(data_frame=df_year,x=df_year['Year(s)'],y=df_year['mortality'])
     fig.update_layout(title="Grafik 1  Median Mortalitas Balita Dibawah 5 Tahun (per 1000 kelahiran)")
     st.plotly_chart(fig)
@@ -99,7 +99,7 @@ elif selected5 == 'Analisa':
     #analisa 1 section
     st.markdown("## Analisa 1 : Perbandingan Mortalitas Balita di Indonesia Dengan Negara ASEAN")
     #olah data csv
-    df_morasean_2022 = pd.read_csv('dataset untuk streamlit/mortality_2022.csv')
+    df_morasean_2022 = pd.read_csv('dataset-streamlit/mortality_2022.csv')
     colors = ['lightslategray',] * 10
     colors[5] = 'red'
     df_morasean_2022.rename(columns={'Country or Area': 'Country'}, inplace=True)
@@ -131,7 +131,7 @@ elif selected5 == 'Analisa':
     #analisa 2 section
     st.markdown("## Analisa 2 : Perbandingan Trend Mortalitas Balita (YoY) di Indonesia Dengan Negara ASEAN")
     #olah data csv
-    df_trends = pd.read_csv('dataset untuk streamlit/trends.csv')
+    df_trends = pd.read_csv('dataset-streamlit/trends.csv')
     df_trends.rename(columns={'Country or Area': 'Country'}, inplace=True)
     #buat line chart dengan plotly
     fig_asean_trends = px.line(df_trends, x="Year(s)", y="Value", color='Country')
@@ -221,7 +221,7 @@ elif selected5 == 'Analisa':
     #analisa 4 section
     st.markdown("## Analisa 4 : Apakah Faktor (pendidikan, fertilitas remaja, kesenjangan kemiskinan) memiliki korelasi dengan mortalitas balita?")
     st.write("Apakah faktor-faktor yang telah disebutkan di section analisa 3 itu memang memiliki korelasi dengan mortalitas balita? sehingga menyebabkan antar negara memiliki perbedaan nilai mortalitasnya")
-    df_correl = pd.read_csv('dataset untuk streamlit/correlation.csv')
+    df_correl = pd.read_csv('dataset-streamlit/correlation.csv')
     df_correl = df_correl.loc[:,['school_years','mortality_5','poverty_percentage','ferr_rate']]
     custom_cmap = sns.color_palette("coolwarm", as_cmap=True)
     corr = df_correl.corr()
