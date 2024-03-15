@@ -118,7 +118,7 @@ elif selected5 == 'Analisa':
     ['ASEAN','Indonesia']
     )
     if negara == "Indonesia":
-        fig_indo.update_layout(title_text="Grafik 2.1  Perbandingan Mortalitas Balita di Indonesia Dengan Negara ASEAN Lain (Tahun 2022)",title_x=0.15, title_y=0.95)
+        fig_indo.update_layout(title_text="Grafik 2.1  Perbandingan Mortalitas Balita di Indonesia Dengan Negara ASEAN Lain (Tahun 2022)",title_x=0.05, title_y=0.95)
         st.plotly_chart(fig_indo)
         st.write('source : [**UNData**](https://data.un.org/Data.aspx?d=PopDiv&f=variableID%3A80) ')
     else :
