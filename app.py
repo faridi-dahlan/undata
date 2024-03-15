@@ -174,7 +174,7 @@ elif selected5 == 'Analisa':
         fig_asean_trends.update_layout(title_text="Grafik 3.1  Perbandingan Mortalitas Balita (YoY) Antarnegara di ASEAN",title_x=0.15, title_y=0.95)
         st.plotly_chart(fig_asean_trends)
     else :
-        fig_indo_trends.update_layout(title_text="Grafik 3.2  Perbandingan Mortalitas Balita di Indonesia Dengan Negara ASEAN Lain (YoY)",title_x=0.15, title_y=0.95)
+        fig_indo_trends.update_layout(title_text="Grafik 3.2  Perbandingan Mortalitas Balita di Indonesia Dengan Negara ASEAN Lain (YoY)",title_x=0, title_y=0.95)
         st.plotly_chart(fig_indo_trends)
     st.write('source : [**UNData**](https://data.un.org/Data.aspx?d=PopDiv&f=variableID%3A80) ')
     st.write("""Semua negara di ASEAN memiliki kecenderungan turun dari tahun ke tahun sejak 1950. Jika kita lihat pada tahun 1950 an, kita masih memiliki nilai mortalitas balita yang begitu tinggi (304 kematian balita dari 1000 kelahiran), bahkan dibanding dengan negara Filipina. Namun, hingga era sekarang justru kita memiliki angka yang dibawah Filipina. Tetapi, hal menarik justru terjadi pada tahun 1965 di Indonesia. Kenaikan mortalitas yang terjadi diperkirakan karena kejadian [**krisis ekonomi di Indonesia pada tahun 1965**](https://www.kompasiana.com/andriaditya4909/60c4d36e8ede486c184ad382/krisis-ekonomi-1965-inflansi-tersebar-dalam-sejarah-indonesia) """)
@@ -185,7 +185,8 @@ elif selected5 == 'Analisa':
     st.write("""**Hipotesa Nol (H0)** : Tidak ada perbedaan signifikan mortalitas balita antar negara ASEAN""")
     st.write("""**Hipotesa Alternatif (Ha)** : Ada perbedaan signifikan mortalitas balita antar negara ASEAN""")
     #buat boxplot
-    fig_asean_boxplot = px.box(df_trends, x="Country", y="Value",title="Grafik 4  Perbandingan Mortalitas Balita Antar Negara ASEAN (Secara Uji Statistik)",title_x=0.15, title_y=0.95)
+    fig_asean_boxplot = px.box(df_trends, x="Country", y="Value",title="Grafik 4  Perbandingan Mortalitas Balita Antar Negara ASEAN (Secara Uji Statistik)")
+    fig_asean_boxplot.update_layout(title_x=0.15, title_y=0.95)
     st.plotly_chart(fig_asean_boxplot)
     st.write("Kalau berdasarkan grafik boxplot diatas, kita mungkin melihat adanay beberapa negara yang memiliki perbedaan (seperti Singapura dan Lao). Namun, kita akan coba menghitung berdasar uji ANOVA")
     #lakukan analisa anova
