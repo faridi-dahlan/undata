@@ -59,7 +59,7 @@ tidak mendapatkan pendidikan dasar ([**WHO Journal,2014**](https://apps.who.int/
     #olah data csv
     df_year = pd.read_csv('dataset-streamlit/yoy_mortality.csv')
     fig = px.line(data_frame=df_year,x=df_year['Year(s)'],y=df_year['mortality'])
-    fig.update_layout(title="Grafik 1 - Median Mortalitas Balita Dibawah 5 Tahun (per 1000 kelahiran)",title_x=0.2, title_y=0.95)
+    fig.update_layout(title="Grafik 1 - Median Mortalitas Balita Dibawah 5 Tahun (per 1000 kelahiran)",title_x=0.15, title_y=0.95)
     st.plotly_chart(fig)
     st.write('source : [**UNData**](https://data.un.org/Data.aspx?d=PopDiv&f=variableID%3A80) ')
     st.write("Dari grafik menunjukkan adanya tanda positif bagi seluruh dunia, dikarenakan semakin menurunnya angka mortalitas balita")
