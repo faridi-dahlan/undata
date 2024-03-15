@@ -185,7 +185,7 @@ elif selected5 == 'Analisa':
     st.write("""**Hipotesa Nol (H0)** : Tidak ada perbedaan signifikan mortalitas balita antar negara ASEAN""")
     st.write("""**Hipotesa Alternatif (Ha)** : Ada perbedaan signifikan mortalitas balita antar negara ASEAN""")
     #buat boxplot
-    fig_asean_boxplot = px.box(df_trends, x="Country", y="Value",title="Grafik 4  Perbandingan Mortalitas Balita Antar Negara ASEAN (Secara Uji Statistik)"title_x=0.15, title_y=0.95)
+    fig_asean_boxplot = px.box(df_trends, x="Country", y="Value",title="Grafik 4  Perbandingan Mortalitas Balita Antar Negara ASEAN (Secara Uji Statistik)",title_x=0.15, title_y=0.95)
     st.plotly_chart(fig_asean_boxplot)
     st.write("Kalau berdasarkan grafik boxplot diatas, kita mungkin melihat adanay beberapa negara yang memiliki perbedaan (seperti Singapura dan Lao). Namun, kita akan coba menghitung berdasar uji ANOVA")
     #lakukan analisa anova
