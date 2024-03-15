@@ -59,8 +59,9 @@ tidak mendapatkan pendidikan dasar ([**WHO Journal,2014**](https://apps.who.int/
     #olah data csv
     df_year = pd.read_csv('dataset-streamlit/yoy_mortality.csv')
     fig = px.line(data_frame=df_year,x=df_year['Year(s)'],y=df_year['mortality'])
-    fig.update_layout(title="Grafik 1  Median Mortalitas Balita Dibawah 5 Tahun (per 1000 kelahiran)")
+    fig.layout.title = {text: "Grafik 1 Median Mortalitas Balita Dibawah 5 Tahun (per 1000 kelahiran)",align: "center"}
     st.plotly_chart(fig)
+    st.write('source :[**UNData**](https://data.un.org/Data.aspx?d=PopDiv&f=variableID%3A80) ')
     st.write("Dari grafik menunjukkan adanya tanda positif bagi seluruh dunia, dikarenakan semakin menurunnya angka mortalitas balita")
     st.write('-'*100)
     #section rumusan masalah
@@ -90,9 +91,6 @@ elif selected5 == 'Data & Metode':
     st.write("""3. **Poverty gap at \$2.15 a day (2017 PPP) (%)** : Ukuran yang mencerminkan kedalaman kemiskinan serta kejadiannya.Ukuran ini menunjukkan rata−rata kekurangan pendapatan atau konsumsi dari garis kemiskinan sebesar 2,15 dollar per hari, yang dinyatakan sebagai persentase dari garis kemiskinan tersebut. Semakin tinggi poverty, semakin dalam kemiskinan di negara tersebut""")
     st.write("""4. **School life expectancy (years). Primary to secondary education (ISCED 1 to 3)** : Jumlah total tahun sekolah yang dapat diharapkan diterima oleh seorang anak, yang mencakup pendidikan dasar hingga menengah (ISCED 1 hingga 3). [ISCED : 1 Primary Education , 2 Lower Secondary Education , 3 Upper Secondary Education]""")
     st.write('-'*100)
-    #tahap pengerjaan project section
-    st.markdown("## Tahap Pengerjaan Project")
-    st.image('image/Mencari Dataset Trekait.png', caption='Gambar 2. Proses Tahapan Pengerjaan' )
 #analisa page
 elif selected5 == 'Analisa':
     #analisa 1 section
