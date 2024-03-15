@@ -118,11 +118,13 @@ elif selected5 == 'Analisa':
     ['ASEAN','Indonesia']
     )
     if negara == "Indonesia":
-        fig_indo.update_layout(title_text="Grafik 2.1  Perbandingan Mortalitas Balita di Indonesia Dengan Negara ASEAN Lain (Tahun 2022)")
+        fig_indo.update_layout(title_text="Grafik 2.1  Perbandingan Mortalitas Balita di Indonesia Dengan Negara ASEAN Lain (Tahun 2022),title_x=0.15, title_y=0.95")
         st.plotly_chart(fig_indo)
+        st.write('source : [**UNData**](https://data.un.org/Data.aspx?d=PopDiv&f=variableID%3A80) ')
     else :
-        fig_asean.update_layout(title="Grafik 2.2  Perbandingan Mortalitas Balita diantara Negara ASEAN (Tahun 2022)")
+        fig_asean.update_layout(title="Grafik 2.2  Perbandingan Mortalitas Balita diantara Negara ASEAN (Tahun 2022),title_x=0.15, title_y=0.95")
         st.plotly_chart(fig_asean)
+        st.write('source : [**UNData**](https://data.un.org/Data.aspx?d=PopDiv&f=variableID%3A80) ')
     st.write("""Berdasarkan grafik di atas,pada tahun 2022 kita masih memiliki nilai mortalitas yang cukup tinggi. Dengan angka 21 kematian balita per 1000 kelahiran (peringkat 5 di ASEAN). Hal ini tentu bisa menjadi sebuah evaluasi bagi kita agar bisa menurunkan angka tersebut di tahun kedepannya. Pemerintah ataupun stakeholders terkait perlu mengkaji mengenai isu yang berkaitan dengan kesejahteraan ini. Kita mungkin bisa belajar dari negara Singapura yang mampu menjadi terbaik dalam menekan angka mortalitas balita""")
     st.write('-'*100)
     #analisa 2 section
@@ -170,7 +172,7 @@ elif selected5 == 'Analisa':
     ['ASEAN','Indonesia']
     )
     if negara_2 == "ASEAN":
-        fig_asean_trends.update_layout(title_text="Grafik 3.1  Perbandingan Mortalitas Balita (YoY) Antarnegara di ASEAN")
+        fig_asean_trends.update_layout(title_text="Grafik 3.1  Perbandingan Mortalitas Balita (YoY) Antarnegara di ASEAN",,title_x=0.15, title_y=0.95)
         st.plotly_chart(fig_asean_trends)
     else :
         fig_indo_trends.update_layout(title_text="Grafik 3.2  Perbandingan Mortalitas Balita di Indonesia Dengan Negara ASEAN Lain (YoY)")
