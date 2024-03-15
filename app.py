@@ -231,10 +231,7 @@ elif selected5 == 'Analisa':
     sns.heatmap(data=corr,cmap=custom_cmap,annot=True)
     st.pyplot(fig_correl)
     st.write("source :")
-    st.write("1. [**UNData Under-five mortality**](https://data.un.org/Data.aspx?d=PopDiv&f=variableID%3A80)")
-    st.write("2. [**World Bank Adolescent fertility rate (births per 1,000 women ages 15-19)**](https://data.worldbank.org/indicator/SP.ADO.TFRT)")
-    st.write("3. [**World Bank Poverty gap at $2.15 a day (2017 PPP) (%)**](https://data.worldbank.org/indicator/SI.POV.GAPS)")
-    st.write("4. [**UNData School life expectancy (years). Primary to secondary education (ISCED 1 to 3)**](https://data.un.org/Data.aspx?d=UNESCO&f=series:SLE_123)")
+    st.write("""[**UNData Under-five mortality**](https://data.un.org/Data.aspx?d=PopDiv&f=variableID%3A80),[**World Bank Adolescent fertility rate (births per 1,000 women ages 15-19)**](https://data.worldbank.org/indicator/SP.ADO.TFRT)"),[**World Bank Poverty gap at $2.15 a day (2017 PPP) (%)**](https://data.worldbank.org/indicator/SI.POV.GAPS)"),[**UNData School life expectancy (years). Primary to secondary education (ISCED 1 to 3)**](https://data.un.org/Data.aspx?d=UNESCO&f=series:SLE_123)""")
     st.write("Kalau kita lihat dari grafik heatmap, terjadi korelasi yang cukup kuat antar semua variabel yang ada. Ini bisa menjadi acuan bahwa kemungkinan antar variabel memiliki korelasi yang kuat. Grafik heatmap ini juga menjadi bukti yang memperkuat [**Jurnal WHO tahun 2014**](https://apps.who.int/iris/bitstream/handle/10665/242265/WER8938_418-420.PDF). Meskipun, tentu ada faktor lainnya yang menyebabkan tinggi/rendahnya mortalitas balita")
 else  :
     st.markdown("## Diskusi")
