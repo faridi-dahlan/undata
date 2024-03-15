@@ -118,7 +118,7 @@ elif selected5 == 'Analisa':
     ['ASEAN','Indonesia']
     )
     if negara == "Indonesia":
-        fig_indo.update_layout(title_text="Grafik 2.1  Perbandingan Mortalitas Balita di Indonesia Dengan Negara ASEAN Lain (Tahun 2022)",title_x=0.03, title_y=0.95)
+        fig_indo.update_layout(title_text="Grafik 2.1  Perbandingan Mortalitas Balita di Indonesia Dengan Negara ASEAN Lain (Tahun 2022)",title_x=0.02, title_y=0.95)
         st.plotly_chart(fig_indo)
     else :
         fig_asean.update_layout(title="Grafik 2.2  Perbandingan Mortalitas Balita diantara Negara ASEAN (Tahun 2022)",title_x=0.15, title_y=0.95)
@@ -186,7 +186,7 @@ elif selected5 == 'Analisa':
     st.write("""**Hipotesa Alternatif (Ha)** : Ada perbedaan signifikan mortalitas balita antar negara ASEAN""")
     #buat boxplot
     fig_asean_boxplot = px.box(df_trends, x="Country", y="Value",title="Grafik 4  Perbandingan Mortalitas Balita Antar Negara ASEAN (Secara Uji Statistik)")
-    fig_asean_boxplot.update_layout(title_x=0.05, title_y=0.95)
+    fig_asean_boxplot.update_layout(title_x=0.1, title_y=0.95)
     st.plotly_chart(fig_asean_boxplot)
     st.write('source : [**UNData**](https://data.un.org/Data.aspx?d=PopDiv&f=variableID%3A80) ')
     st.write("Kalau berdasarkan grafik boxplot diatas, kita mungkin melihat adanay beberapa negara yang memiliki perbedaan (seperti Singapura dan Lao). Namun, kita akan coba menghitung berdasar uji ANOVA")
