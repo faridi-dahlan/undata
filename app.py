@@ -172,7 +172,7 @@ elif selected5 == 'Analisa':
     ['ASEAN','Indonesia']
     )
     if negara_2 == "ASEAN":
-        fig_asean_trends.update_layout(title_text="Grafik 3.1  Perbandingan Mortalitas Balita (YoY) Antarnegara di ASEAN",,title_x=0.15, title_y=0.95)
+        fig_asean_trends.update_layout(title_text="Grafik 3.1  Perbandingan Mortalitas Balita (YoY) Antarnegara di ASEAN",title_x=0.15, title_y=0.95)
         st.plotly_chart(fig_asean_trends)
     else :
         fig_indo_trends.update_layout(title_text="Grafik 3.2  Perbandingan Mortalitas Balita di Indonesia Dengan Negara ASEAN Lain (YoY)")
