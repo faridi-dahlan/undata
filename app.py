@@ -214,7 +214,7 @@ elif selected5 == 'Analisa':
     #hasil analisa uji anova
     st.write("Berikut merupakan hasil uji ANOVA :")
     st.write(anova)
-    st.write("Berdasarkan hasil, nilai p-value < 0.05. Hal ini mengartikan H0 ditolak. Artinya, maka kita terima Ha yang mana berarti Ada perbedaan signifikan mortalitas balita antar negara ASEAN")
+    st.write("Berdasarkan hasil, nilai **p-value < 0.05. Hal ini mengartikan H0 ditolak**. Artinya, maka kita terima Ha yang mana berarti Ada perbedaan signifikan mortalitas balita antar negara ASEAN")
     st.write("**Insight** : Berdasarkan hasil diatas, bisa diartikan bahwa ada perbedaan mortalitas yang signifikan (setidaknya antar 1 negara dengan negara lain)")
     st.write("**Possible Cause** : Kemungkinan adanya perbedaan permasalahan mortalitas. Perlu kita lakukan lebih lanjut mengenai faktor kemungkinan penyebabnya")
     st.write("Seperti yang telah disebutkan pada halaman pendahuluan, kita bisa mengira jika faktor-faktor tersebut antara lain : korelasi pendidikan, fertilitas remaja, kesenjangan kemiskinan")
